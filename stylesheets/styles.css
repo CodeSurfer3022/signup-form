@@ -9,17 +9,34 @@ body {
 }
 
 main {
-    height: 100%;
-}
-
-form {
     background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+form {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 50%;
     width: 50%;
+}
+
+input:invalid {
+    border:  2px solid red;
+}
+
+input:required:invalid {
+    background-color: darkgray;
 }
